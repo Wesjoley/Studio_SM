@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+:root {
+  --body-bg-color: #742C8E;
+  --purple: #742C8E;
+  --light-purple: #cca1f5; /* Novo tom de roxo mais claro */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body, html {
+  font-family: "Poppins", sans-serif;
+  background-image: radial-gradient(circle, var(--light-purple),var(--purple));
+  background-size: 200% 200%;
+  animation: gradientMove 20s infinite; /* Adiciona uma animação ao gradiente móvel */
+}
+
+@keyframes gradientMove {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 250px;
+  height: 213px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--purple);
+  background-image: linear-gradient(to top, var(--purple), var(--light-purple));
+}
+
+.avatar img {
+  width: 250px;
+  height: 200px;
+  border-radius: 80px;
+}
+
+.instagram-user {
+  margin-top: 15px;
+  color: white;
+}
+
+.links-container {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  margin-top: 16px;
+  width: 325px;
+  border: 2px solid var(--light-purple);
+  border-radius: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 0;
+  transition: ease 0.3s;
+  background-color: var(--purple);
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.link:hover {
+  background: #b881ec;
+  color: #fff;
+  transition: ease 0.5s;
+}
+
+.avatar {
+  border-radius: 80px;
+}
+
+.instagram-user {
+  margin-top: 15px;
+  color: #000000; /* Substitua pela cor desejada, por exemplo, #742C8E ou qualquer outra cor válida */
+}
+
+body {
+  margin: 0;
+}
+
+.body {
+  margin: 0;
+}
+
+.certifications-container,
+.gallery-container {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.certifications-container h2,
+.certifications-container li {
+  color: #fff; /* Cor do texto branco */
+}
+
+.certifications-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certifications-container li {
+  margin-bottom: 10px;
+}
+
+.image-carousel {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.image-carousel img {
+  width: 100%;
+  margin-right: 10px;
+  transition: transform 0.5s ease;
+}
+
+/* Adiciona efeito de transição suave no hover */
+.image-carousel img:hover {
+  transform: scale(1.1);
+}
+
+/* Adiciona estilos para navegação (opcional) */
+.image-carousel:hover img {
+  opacity: 0.7;
+}
+
+.image-carousel:hover img:hover {
+  opacity: 1;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: #742C8E;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  opacity: 1;
+}
+
+.gallery-container h2 {
+  color: #fff; /* Cor do texto branco */
+}
+
+.custom-img {
+  height: 400px; /* Ajuste a altura desejada */
+  object-fit: cover;
+}
+
